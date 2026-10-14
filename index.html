@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobFinder | Find Your Dream Job</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Job<span>Finder</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+        </nav>
+
+        <button class="login-btn" id="loginBtn">Login</button>
+    </header>
+
+    <!-- Search Section -->
+    <section class="hero" id="home">
+
+        <h1>Find Your Dream Job Today</h1>
+
+        <p>Discover opportunities that match your skills and career goals.</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="jobTitle"
+                placeholder="Search by job title"
+            >
+
+            <input
+                type="text"
+                id="jobLocation"
+                placeholder="Enter location"
+            >
+
+            <button id="searchBtn">Search Jobs</button>
+
+        </div>
+
+    </section>
+
+    <!-- Job Listing Section -->
+    <section class="jobs-section" id="jobs">
+
+        <div class="section-heading">
+            <h2>Latest Job Openings</h2>
+            <p id="jobCount">Explore available opportunities</p>
+        </div>
+
+        <div class="job-container" id="jobContainer">
+
+            <!-- Job 1 -->
+            <div class="job-card">
+
+                <div class="job-top">
+                    <div class="company-icon">T</div>
+                    <span class="job-type">Full Time</span>
+                </div>
+
+                <h3>Java Developer</h3>
+                <p class="company">Tech Solutions</p>
+
+                <div class="job-details">
+                    <span>📍 Pune</span>
+                    <span>💰 ₹4–6 LPA</span>
+                </div>
+
+                <p class="job-description">
+                    Develop and maintain applications using Java and SQL.
+                </p>
+
+                <button class="apply-btn">Apply Now</button>
+
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card">
+
+                <div class="job-top">
+                    <div class="company-icon">W</div>
+                    <span class="job-type">Full Time</span>
+                </div>
+
+                <h3>Web Developer</h3>
+                <p class="company">WebWorks Pvt Ltd</p>
+
+                <div class="job-details">
+                    <span>📍 Mumbai</span>
+                    <span>💰 ₹3–5 LPA</span>
+                </div>
+
+                <p class="job-description">
+                    Create responsive websites using HTML, CSS, and JavaScript.
+                </p>
+
+                <button class="apply-btn">Apply Now</button>
+
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card">
+
+                <div class="job-top">
+                    <div class="company-icon">D</div>
+                    <span class="job-type">Internship</span>
+                </div>
+
+                <h3>Data Analyst Intern</h3>
+                <p class="company">DataVision</p>
+
+                <div class="job-details">
+                    <span>📍 Nashik</span>
+                    <span>💰 ₹15k–20k/month</span>
+                </div>
+
+                <p class="job-description">
+                    Analyze datasets and prepare reports using Excel and SQL.
+                </p>
+
+                <button class="apply-btn">Apply Now</button>
+
+            </div>
+
+            <!-- Job 4 -->
+            <div class="job-card">
+
+                <div class="job-top">
+                    <div class="company-icon">A</div>
+                    <span class="job-type">Full Time</span>
+                </div>
+
+                <h3>Angular Developer</h3>
+                <p class="company">AppTech Solutions</p>
+
+                <div class="job-details">
+                    <span>📍 Pune</span>
+                    <span>💰 ₹4–7 LPA</span>
+                </div>
+
+                <p class="job-description">
+                    Build interactive web applications using Angular and TypeScript.
+                </p>
+
+                <button class="apply-btn">Apply Now</button>
+
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            No jobs found. Try another job title or location.
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 JobFinder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

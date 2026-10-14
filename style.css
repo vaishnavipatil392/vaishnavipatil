@@ -1,0 +1,298 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fc;
+    color: #222;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #263b80;
+}
+
+.logo span {
+    color: #4d70ed;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4d70ed;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background-color: #263b80;
+    color: white;
+    padding: 11px 25px;
+}
+
+.login-btn:hover {
+    background-color: #4d70ed;
+}
+
+/* Search Section */
+.hero {
+    background: linear-gradient(135deg, #263b80, #5478ef);
+    color: white;
+    text-align: center;
+    padding: 75px 20px 85px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 35px;
+    color: #e7eaff;
+}
+
+.search-box {
+    display: flex;
+    max-width: 850px;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #4d70ed;
+}
+
+.search-box button {
+    background-color: #263b80;
+    color: white;
+    padding: 15px 22px;
+    white-space: nowrap;
+}
+
+.search-box button:hover {
+    background-color: #4d70ed;
+}
+
+/* Jobs Section */
+.jobs-section {
+    padding: 55px 8%;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #263b80;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+/* Job Cards */
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e8eaf2;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(38, 59, 128, 0.1);
+}
+
+.job-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9edff;
+    color: #263b80;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.job-type {
+    background-color: #e8f8ee;
+    color: #21844a;
+    padding: 7px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.company {
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.job-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.job-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.apply-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #263b80;
+    color: white;
+}
+
+.apply-btn:hover {
+    background-color: #4d70ed;
+}
+
+/* No Results */
+.no-results {
+    display: none;
+    text-align: center;
+    margin-top: 35px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    background-color: #263b80;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .jobs-section {
+        padding: 40px 5%;
+    }
+
+    .job-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
